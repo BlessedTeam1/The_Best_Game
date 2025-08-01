@@ -1,57 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class AutoAttack : MonoBehaviour
 {
-    public float attackRange = 3f;        // Радиус атаки
-    public float attackCooldown = 1.5f;   // Время между атаками
-    public int damage = 10;               // Урон
-
+    private AttackZoneDamage attackZoneDamage;
+    public float attackCooldown = 0.3f; // было 0.5 — стало быстрее
     private float lastAttackTime = 0f;
+
+    public GameObject attackZonePrefab;  // Префаб зоны атаки
+    public float activeTime = 0.2f;       // чуть короче время действия
+
+    void Start()
+    {
+        attackZoneDamage = GetComponentInChildren<AttackZoneDamage>(); 
+    }
 
     void Update()
     {
-        GameObject target = FindClosestEnemy();
-
-        if (target != null)
+        if (Time.time >= lastAttackTime + attackCooldown)
         {
-            float distance = Vector2.Distance(transform.position, target.transform.position);
-            if (distance <= attackRange && Time.time >= lastAttackTime + attackCooldown)
-            {
-                Attack(target);
-                lastAttackTime = Time.time;
-            }
+            attackZoneDamage.PerformAttack();
+
+            lastAttackTime = Time.time;
         }
-    }
-
-    GameObject FindClosestEnemy()
-    {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        GameObject closest = null;
-        float minDistance = Mathf.Infinity;
-
-        foreach (GameObject enemy in enemies)
-        {
-            float distance = Vector2.Distance(transform.position, enemy.transform.position);
-            if (distance < minDistance)
-            {
-                minDistance = distance;
-                closest = enemy;
-            }
-        }
-
-        return closest;
-    }
-
-    void Attack(GameObject target)
-    {
-        Debug.Log("Атака по " + target.name);
         
-        EnemyHealth hp = target.GetComponent<EnemyHealth>();
-        if (hp != null)
-        {
-            hp.TakeDamage(damage);
-        }
     }
 }
