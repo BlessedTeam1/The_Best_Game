@@ -17,4 +17,13 @@ public class SceneLoader : MonoBehaviour
             Debug.LogWarning("Scene name is empty on " + gameObject.name);
         }
     }
+    public void QuitGame()
+    {
+        Debug.Log("Quitting the game...");
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+        Application.Quit();
+        #endif
+    }
 }
