@@ -23,6 +23,11 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         // Здесь можно добавить анимацию смерти
+         LootDropper dropper = GetComponent<LootDropper>();
+    if (dropper != null)
+    {
+        dropper.DropLoot();
+    }
         Destroy(gameObject);
     }
 }
