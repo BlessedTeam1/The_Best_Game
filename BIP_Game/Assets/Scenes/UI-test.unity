@@ -382,7 +382,8 @@ MonoBehaviour:
   - {fileID: -8913455559987354022, guid: 4b77f6115b6ca4947a39340d5a1e91df, type: 3}
   - {fileID: -9088967667715792038, guid: 4b77f6115b6ca4947a39340d5a1e91df, type: 3}
   expImage: {fileID: 1922097889}
-  maxExp: 8
+  maxExp: 1
+  levelText: {fileID: 1867545136}
 --- !u!1 &385131238
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +396,7 @@ GameObject:
   - component: {fileID: 385131241}
   - component: {fileID: 385131240}
   m_Layer: 5
-  m_Name: XP
+  m_Name: lvl text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +673,7 @@ MonoBehaviour:
   target: {fileID: 351453705}
   minBounds: {x: 0, y: 0}
   maxBounds: {x: 50, y: 30}
-  smoothTime: 0.1
+  smoothTime: 0.2
 --- !u!1 &552614961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1173,7 @@ GameObject:
   - component: {fileID: 1867545137}
   - component: {fileID: 1867545136}
   m_Layer: 5
-  m_Name: XP counter
+  m_Name: LVL counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1194,8 +1195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.62, y: -0.85}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -16.0235, y: -1.0853}
+  m_SizeDelta: {x: 58.4759, y: 44.8908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867545136
 MonoBehaviour:
@@ -1217,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: '-'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fdea03c68052ee4d8a6dca6ee724498, type: 2}
   m_sharedMaterial: {fileID: 762645435605821746, guid: 5fdea03c68052ee4d8a6dca6ee724498, type: 2}
