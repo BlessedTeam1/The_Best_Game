@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b67f3cd3cc74cd542878fd879a280617
+guid: 81328fd61849ffb41891587c09733d5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5850584369701053544
-    second: "Captura de ecr\xE3 2025-08-01 133247_0"
+      213: -7170580718403797388
+    second: "tree - C\xF3pia_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Captura de ecr\xE3 2025-08-01 133247_0"
+      name: "tree - C\xF3pia_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 704
-        height: 704
+        x: 13
+        y: 47
+        width: 438
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 864eb7c8c73713150800000000000000
-      internalID: 5850584369701053544
+      spriteID: 47eb646f3dafc7c90800000000000000
+      internalID: -7170580718403797388
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Captura de ecr\xE3 2025-08-01 133247_0": 5850584369701053544
+      "tree - C\xF3pia_0": -7170580718403797388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

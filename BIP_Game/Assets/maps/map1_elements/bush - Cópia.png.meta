@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: efabed8855696b54f8d2dbc33ef78b2f
+guid: 960b7e8bc413d4e45b3952db1f920ecb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8466112859184389744
-    second: "Captura de ecr\xE3 2025-08-04 004946_0"
+      213: 6189006825527699670
+    second: "bush - C\xF3pia_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Captura de ecr\xE3 2025-08-04 004946_0"
+      name: "bush - C\xF3pia_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 698
-        height: 700
+        x: 33
+        y: 67
+        width: 527
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07e5d004accad7570800000000000000
-      internalID: 8466112859184389744
+      spriteID: 6d8eb04cae4c3e550800000000000000
+      internalID: 6189006825527699670
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Captura de ecr\xE3 2025-08-04 004946_0": 8466112859184389744
+      "bush - C\xF3pia_0": 6189006825527699670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
