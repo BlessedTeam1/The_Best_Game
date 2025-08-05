@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 65ffafc0b9224a94e839697e42d8d3c0
+guid: 563d84c99ea649e45ad7e44a40dc82f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6909766172045017399
-    second: image-removebg-preview (7)_0
+      213: 4995800981709876657
+    second: blueHouse_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (7)_0
+      name: blueHouse_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 2
-        width: 45
-        height: 90
+        x: 2
+        y: 0
+        width: 101
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cefe3aa6449b10a0800000000000000
-      internalID: -6909766172045017399
+      spriteID: 1bd6d532686a45540800000000000000
+      internalID: 4995800981709876657
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image-removebg-preview (7)_0: -6909766172045017399
+      blueHouse_0: 4995800981709876657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
