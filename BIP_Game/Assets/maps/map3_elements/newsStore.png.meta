@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f56dd19e2561884eb49485b1175db1f
+guid: 7093926ef02108f47b507fefdb3c824e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4366363395544893404
-    second: image-removebg-preview (20)_0
+      213: 7448935671711095012
+    second: newsStore_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (20)_0
+      name: newsStore_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 6
-        width: 38
-        height: 36
+        x: 11
+        y: 3
+        width: 139
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd7c8bfcf50789c30800000000000000
-      internalID: 4366363395544893404
+      spriteID: 4e8531bf68fef5760800000000000000
+      internalID: 7448935671711095012
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image-removebg-preview (20)_0: 4366363395544893404
+      newsStore_0: 7448935671711095012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
