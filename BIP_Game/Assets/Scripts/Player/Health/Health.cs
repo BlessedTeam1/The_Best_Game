@@ -43,7 +43,7 @@ public class Health : MonoBehaviour
     {
         Debug.Log(gameObject.name + " dead");
         Destroy(gameObject);
-        SceneManager.LoadSceneAsync("Menu");
+        SceneManager.LoadSceneAsync("Restart_screen");
     }
 
     void UpdateHealth()
