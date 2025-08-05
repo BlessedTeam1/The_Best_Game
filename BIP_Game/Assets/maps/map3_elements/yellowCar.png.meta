@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 53e59598f63f27a42af05b1477945e35
+guid: 3bae0101bcd54db459cfffe71d494309
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4540396016053426264
-    second: image-removebg-preview (10)_0
+      213: 5379083320511698758
+    second: yellowCar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (10)_0
+      name: yellowCar_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 7
-        width: 56
-        height: 102
+        x: 2
+        y: 9
+        width: 220
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 858967cde1ab20f30800000000000000
-      internalID: 4540396016053426264
+      spriteID: 6471458c7c756aa40800000000000000
+      internalID: 5379083320511698758
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image-removebg-preview (10)_0: 4540396016053426264
+      yellowCar_0: 5379083320511698758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
