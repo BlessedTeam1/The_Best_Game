@@ -8,6 +8,8 @@ public class AttackZoneDamage : MonoBehaviour
     private Animator animator;
     private Collider2D col;
 
+    public string AttackName;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -18,7 +20,7 @@ public class AttackZoneDamage : MonoBehaviour
     public void PerformAttack()
     {
         col.enabled = true;
-        animator.Play("GreenAttack");
+        animator.Play(AttackName);
 
         // Отключим коллайдер после короткого времени
         Invoke(nameof(DisableCollider), activeTime);
