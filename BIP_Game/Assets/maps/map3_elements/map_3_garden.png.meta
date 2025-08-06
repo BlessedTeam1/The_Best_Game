@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 2c55bd9994c9bdf44b9c3bfd533d57df
-=======
-guid: 72f2200d55845954b9f606cbd81d7d37
->>>>>>> 63547fa887dd94870f5b21a3cc3d213351421216
+guid: eb1789477e39e7c4b98334f0ffb483b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4366363395544893404
-    second: image-removebg-preview (20)_0
+      213: 2405695766710514209
+    second: map_3_garden_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (20)_0
+      name: map_3_garden_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 6
-        width: 38
-        height: 36
+        x: 0
+        y: 0
+        width: 236
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd7c8bfcf50789c30800000000000000
-      internalID: 4366363395544893404
+      spriteID: 122f07ccd8fb26120800000000000000
+      internalID: 2405695766710514209
       vertices: []
       indices: 
       edges: []
@@ -139,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image-removebg-preview (20)_0: 4366363395544893404
+      map_3_garden_0: 2405695766710514209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
