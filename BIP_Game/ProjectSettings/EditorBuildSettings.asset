@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Restart_screen.unity
     guid: c026fcbf2de31df4180c9672b5860483
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: a64f9638547f57d46ad02f04e6428241
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
