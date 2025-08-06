@@ -6160,6 +6160,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2096110022939559416, guid: e0d9e9e39e1467a4fbed09db6c91428e, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096110022939559416, guid: e0d9e9e39e1467a4fbed09db6c91428e, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 499388645}
@@ -6342,10 +6346,6 @@ PrefabInstance:
     - target: {fileID: 602173676040298800, guid: 9e4aa4a6a992c694e870a0ac91821013, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5820862115100628036, guid: 9e4aa4a6a992c694e870a0ac91821013, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
