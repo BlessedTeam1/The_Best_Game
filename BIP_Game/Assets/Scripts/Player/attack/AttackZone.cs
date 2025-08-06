@@ -5,14 +5,23 @@ public class AttackZoneDamage : MonoBehaviour
     public int damage = 50;
     public float activeTime = 2f;
 
-    private Animator animator;
+    public Animator animator;
     private Collider2D col;
 
     public string AttackName;
 
+     private void Awake()
+    {
+        
+        col = GetComponent<Collider2D>();
+        if (col != null)
+            col.enabled = false;
+        else
+            Debug.LogError("AttackZoneDamage: нет Collider2D на префабе!");
+    }
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
         col = GetComponent<Collider2D>();
         col.enabled = false;
     }
