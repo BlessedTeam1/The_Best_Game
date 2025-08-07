@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    public Animator animator;
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
@@ -20,6 +21,11 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public void GetFire()
+    {
+        print("BUTT");
+        animator.Play("Fire");
+    }
     void Die()
     {
         // Здесь можно добавить анимацию смерти
