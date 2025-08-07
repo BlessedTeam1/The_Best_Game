@@ -992,9 +992,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPerks:
-  - {fileID: 11400000, guid: c9abe15a8fbe8b945ad3d8d5d190d857, type: 2}
   - {fileID: 11400000, guid: 2b1927ddfc767d9429b130bc9e97012c, type: 2}
+  - {fileID: 11400000, guid: 79151cdf62873264b92334d2143b1653, type: 2}
+  - {fileID: 11400000, guid: c9abe15a8fbe8b945ad3d8d5d190d857, type: 2}
+  - {fileID: 11400000, guid: 9f1a3f31cfc4e0143b7c4b9fa43a4d21, type: 2}
   - {fileID: 11400000, guid: 9e7534d51202ff74fb2a2e9a8549098b, type: 2}
+  - {fileID: 11400000, guid: 8db2e0448021d224d9bff221e38038be, type: 2}
+  - {fileID: 11400000, guid: 5721bfb942dc60a4bb3620e809578373, type: 2}
+  - {fileID: 11400000, guid: cba15204a1ce694419c5ebed9ccdce63, type: 2}
+  - {fileID: 11400000, guid: 78b5aa6ad7d7f284b8307f5f090d9335, type: 2}
+  - {fileID: 11400000, guid: fde73777d11756f4c879a60a45bce2fa, type: 2}
 --- !u!4 &410359885
 Transform:
   m_ObjectHideFlags: 0
@@ -1406,6 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  animator: {fileID: 0}
 --- !u!114 &552614967
 MonoBehaviour:
   m_ObjectHideFlags: 0
