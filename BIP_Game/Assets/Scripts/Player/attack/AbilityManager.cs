@@ -6,6 +6,7 @@ public class AbilityManager : MonoBehaviour
     public List<Ability> abilities = new List<Ability>();
     public KeyCode[] abilityKeys = { KeyCode.Q, KeyCode.E, KeyCode.R };
 
+  
     void Update()
     {
         for (int i = 0; i < abilities.Count && i < abilityKeys.Length; i++)
@@ -17,6 +18,7 @@ public class AbilityManager : MonoBehaviour
         }
     }
 
+    
     public void AddAbility(Ability ability)
     {
         if (!abilities.Contains(ability))
