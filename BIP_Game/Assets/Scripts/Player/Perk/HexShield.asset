@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cd2cf68ebe5a8c47818f4c2e4fcf9cc, type: 3}
-  m_Name: Nothing
+  m_Name: HexShield
   m_EditorClassIdentifier: 
-  perkName: Nothing1
-  description: Nothing1
+  perkName: Hex Shield
+  description: Automatically blocks one hit every 30 seconds.
   icon: {fileID: 0}
   grantedAbility: {fileID: 0}
-  perkType: 4
-  value: 0
+  perkType: 5
+  value: 30
