@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityName: FIreeee
   icon: {fileID: 0}
-  cooldown: 0
+  cooldown: 2
   radius: 10
-  damage: 1
+  animationTrigger: CoolDown
+  animator: {fileID: 1677010432231399013, guid: f7258daf67b53e148b939b3cf3d2d01d, type: 3}
+  damage: 99
   targetLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 33

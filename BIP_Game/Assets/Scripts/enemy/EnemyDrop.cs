@@ -6,20 +6,29 @@ public class LootDropper : MonoBehaviour
     public class LootItem
     {
         public GameObject itemPrefab;
-        public float dropChance = 1.0f; // от 0.0 до 1.0
+        [Range(0f, 1f)] public float dropChance = 1.0f; // Вероятность дропа (0.0–1.0)
     }
 
-    public LootItem[] lootTable; // таблица возможных предметов
+    [Header("Настройки дропа")]
+    public LootItem[] lootTable; // Таблица предметов
+
+    [Header("Настройки позиции дропа")]
+    public float dropRadius = 0.5f;
 
     public void DropLoot()
     {
         foreach (var loot in lootTable)
         {
-            float roll = Random.value; // случайное число от 0 до 1
+            if (loot.itemPrefab == null)
+            {
+                Debug.LogWarning("LootDropper: Пустой itemPrefab в таблице лута");
+                continue;
+            }
+
+            float roll = Random.value; // Число от 0 до 1
             if (roll <= loot.dropChance)
             {
-                Vector3 dropPosition = transform.position + Random.insideUnitSphere * 0.5f;
-                dropPosition.y = transform.position.y; // Не уходит под землю
+                Vector3 dropPosition = transform.position + (Vector3)(Random.insideUnitCircle * dropRadius);
                 Instantiate(loot.itemPrefab, dropPosition, Quaternion.identity);
             }
         }
