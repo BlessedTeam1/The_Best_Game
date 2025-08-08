@@ -127,7 +127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootTable:
   - itemPrefab: {fileID: 5606652013085820867, guid: a37f1e2f2320fad4abf4ea67c9a7ccda, type: 3}
-    dropChance: 100
+    dropChance: 0.7
+  - itemPrefab: {fileID: 8208506260515424091, guid: ff58c5739dcb1ca42be4853dfa2ece2b, type: 3}
+    dropChance: 0.1
+  dropRadius: 0.5
 --- !u!212 &7708563764368749370
 SpriteRenderer:
   m_ObjectHideFlags: 0

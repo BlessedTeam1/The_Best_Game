@@ -6,9 +6,13 @@ using UnityEngine;
 )]
 public class ExampleAbility : Ability
 {
+   
     [Header("🔧 Настройки примера")]
     [Tooltip("Радиус действия способности")]
     public float radius = 3f;
+
+     public string animationTrigger;
+    public Animator animator;
 
     [Tooltip("Сколько урона наносится в области")]
     public int damage = 10;
@@ -19,6 +23,14 @@ public class ExampleAbility : Ability
     public override void Activate(GameObject user)
     {
         Debug.Log("dfdfdfd");
+        
+        
+         var animator = user.GetComponentInChildren<Animator>();
+        if (animator != null && !string.IsNullOrEmpty(animationTrigger))
+        {
+            animator.SetTrigger(animationTrigger);
+        }
+      
         // 1. Собираем коллайдеры в радиусе
         Collider2D[] hits = Physics2D.OverlapCircleAll(
             user.transform.position,

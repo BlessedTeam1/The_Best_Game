@@ -5,7 +5,7 @@ public abstract class Ability : ScriptableObject
 {
     public string abilityName;
     public Sprite icon;
-    public float cooldown = 1f;
+    public float cooldown;
 
     [NonSerialized]
     private float lastUseTime = -999f;
@@ -16,14 +16,16 @@ public abstract class Ability : ScriptableObject
         return Time.time >= lastUseTime + cooldown;
     }
 
-    public void TryActivate(GameObject user)
+    public bool TryActivate(GameObject user)
     {
         if (CanUse())
         {
             Debug.Log("BEBRA");
             Activate(user);
             lastUseTime = Time.time;
+            return true;
         }
+        else return false;
     }
 
     public abstract void Activate(GameObject user);
