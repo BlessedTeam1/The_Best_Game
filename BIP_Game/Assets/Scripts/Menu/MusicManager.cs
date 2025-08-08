@@ -8,6 +8,8 @@ public class MusicManager : MonoBehaviour
     public AudioClip menuMusic;
     public AudioClip gameMusic1;
     public AudioClip gameMusic2;
+    public AudioClip gameMusic3;
+
 
 
     private AudioSource audioSource;
@@ -42,6 +44,10 @@ public class MusicManager : MonoBehaviour
         if (scene.name == "Level2")
         {
             PlayMusic(gameMusic2, "game");
+        }
+        if (scene.name == "Level3")
+        {
+            PlayMusic(gameMusic3, "game");
         }
         else if (scene.name =="Menu" || scene.name == "Restart_screen")
         {

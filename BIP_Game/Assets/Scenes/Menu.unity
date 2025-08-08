@@ -282,7 +282,7 @@ RectTransform:
   m_GameObject: {fileID: 515294047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0236, y: 1.0236, z: 1.0236}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1061016053}
@@ -290,7 +290,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.010448, y: 0.0054952}
-  m_SizeDelta: {x: 1919.7, y: 1080.2}
+  m_SizeDelta: {x: 1919.7, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515294049
 MonoBehaviour:
@@ -475,6 +475,7 @@ MonoBehaviour:
   menuMusic: {fileID: 8300000, guid: 551e8a3c21ddce34586002aa9b23ccdb, type: 3}
   gameMusic1: {fileID: 8300000, guid: cdc86027143434d4f9f6c969aea5296a, type: 3}
   gameMusic2: {fileID: 8300000, guid: 1d727891a9c7a544e9c0c863bbea0836, type: 3}
+  gameMusic3: {fileID: 8300000, guid: daf204bf5d2e1454a8d7e798cbe044d4, type: 3}
   currentTrack: 
 --- !u!1 &855468186
 GameObject:
