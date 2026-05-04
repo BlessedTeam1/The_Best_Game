@@ -21,3 +21,5 @@ Draco Mania Romania throws you into chaotic arenas where waves of vampires keep 
 Each level takes place in a completely different setting with its own mood, visuals and challenges
 ### Bonuses & Power-Ups
 Collect coins dropped by defeated enemies to level up, then choose one of three different bonuses that will help you survive longer.
+
+### Just download the build and enjoy
