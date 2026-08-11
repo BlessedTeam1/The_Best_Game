@@ -22,4 +22,7 @@ Each level takes place in a completely different setting with its own mood, visu
 ### Bonuses & Power-Ups
 Collect coins dropped by defeated enemies to level up, then choose one of three different bonuses that will help you survive longer.
 
-### Just download the build and enjoy
+### Playable build on itch.io: 
+https://artem-718.itch.io/draco-mania-romania
+
+Just download and enjoy
