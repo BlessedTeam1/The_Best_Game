@@ -27,9 +27,16 @@ public class Expirience : MonoBehaviour
     public TMP_Text levelText;      // ← Assign a UI Text element
 
 
+    private void Awake()
+    {
+        // Statics survive scene reloads, so reset them for a fresh run
+        EXP = 0;
+        playersPerks.Clear();
+    }
+
     private void Start()
     {
-       
+
         levelText.text = "1";
     }
 
