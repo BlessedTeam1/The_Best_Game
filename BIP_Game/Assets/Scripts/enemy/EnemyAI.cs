@@ -17,11 +17,13 @@ public class EnemyAI : MonoBehaviour
     private float obstacleAvoidanceTimer;
 
     Rigidbody2D rb;
+    SpriteRenderer sr;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponentInChildren<SpriteRenderer>();
         obstacleHits = new RaycastHit2D[10];
         targetDirection = Vector2.up;
     }
@@ -78,5 +80,9 @@ public class EnemyAI : MonoBehaviour
     void Move(Vector2 direction)
     {
         rb.AddForce(direction * moveSpeed * Time.deltaTime, ForceMode2D.Impulse);
+
+        // small deadzone so the sprite doesn't jitter when directly above/below the player
+        if (Mathf.Abs(direction.x) > 0.1f)
+            sr.flipX = direction.x < 0;
     }
 }

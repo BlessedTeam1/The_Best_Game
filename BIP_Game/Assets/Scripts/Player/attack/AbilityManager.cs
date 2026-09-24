@@ -7,7 +7,7 @@ public class AbilityManager : MonoBehaviour
     public List<Ability> abilities = new List<Ability>();
 
     public GameObject spriteObject;
-    public KeyCode[] abilityKeys = { KeyCode.Q, KeyCode.E, KeyCode.R };
+    public KeyCode[] abilityKeys = { KeyCode.Space, KeyCode.E, KeyCode.R };
 
     public List<PerfromCoolDown> CoolDown;
 

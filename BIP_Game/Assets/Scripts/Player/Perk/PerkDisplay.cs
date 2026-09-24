@@ -17,17 +17,14 @@ public class PerkDisplay : MonoBehaviour
 
     public void ShowAvailablePerks(List<Perk> perks)
     {
-        perksPlayer = perks;
-        if(perks[0] == null ){ Text1.text = "NO PERKS for u" ; }
-        Text1.text = perks[0].perkName;
-        Description1.text = perks[0].description;
-         if (perks[1] == null ){ Text2.text = "NO PERKS for u" ; }
-        Text2.text = perks[1].perkName;
-        Description2.text = perks[1].description;
-        if (perks[2] == null ){ Text2.text = "NO PERKS for u" ; }
-        Text3.text = perks[2].perkName;
-        Description3.text = perks[2].description;
+        // every perk is already taken: nothing to choose, so don't open (and pause) the menu
+        if (perks.Count == 0)
+            return;
 
+        perksPlayer = perks;
+        ShowSlot(0, Text1, Description1);
+        ShowSlot(1, Text2, Description2);
+        ShowSlot(2, Text3, Description3);
 
         gameObject.SetActive(true);
 
@@ -35,8 +32,27 @@ public class PerkDisplay : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    // fewer than 3 perks can be left near the end of a run
+    private void ShowSlot(int index, TextMeshProUGUI title, TextMeshProUGUI description)
+    {
+        if (index < perksPlayer.Count)
+        {
+            title.text = perksPlayer[index].perkName;
+            description.text = perksPlayer[index].description;
+        }
+        else
+        {
+            title.text = "NO PERKS for u";
+            description.text = "";
+        }
+    }
+
     public void OnButtonClick(int index)
     {
+        // empty slot: ignore the click, the player picks one of the real perks
+        if (index >= perksPlayer.Count)
+            return;
+
         var selected = perksPlayer[index];
         Expirience.playersPerks.Add(selected);
 

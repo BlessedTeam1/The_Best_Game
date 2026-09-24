@@ -10,7 +10,6 @@ public class CoinPickup : MonoBehaviour
         {
             // Добавить монету игроку
             Debug.Log("Монета подобрана!");
-            // Тут можно вызвать PlayerCoins.Add(coinValue) или что-то подобное
 
             Destroy(gameObject); // Удаляем монетку
             Expirience.EXP++;

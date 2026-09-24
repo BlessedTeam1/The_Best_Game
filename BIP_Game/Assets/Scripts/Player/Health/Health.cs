@@ -34,6 +34,13 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Min(currentHealth, maxHealth);
     }
 
+    // raises max health and heals by the same amount, so the bonus is usable right away
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        currentHealth += amount;
+    }
+
     void Update()
     {
         UpdateHealth();

@@ -4,12 +4,14 @@ public class movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     Rigidbody2D rb;
+    SpriteRenderer sr;
     private Vector2 moveDir;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        sr = GetComponentInChildren<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -29,6 +31,10 @@ public class movement : MonoBehaviour
         float moveY = Input.GetKey(KeyCode.W) ? 1 : Input.GetKey(KeyCode.S) ? -1 : 0;
 
         moveDir = new Vector2(moveX, moveY).normalized;
+
+        // flip only when moving horizontally, so the player keeps facing the last direction
+        if (moveX != 0)
+            sr.flipX = moveX < 0;
 
     }
 

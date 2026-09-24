@@ -24,7 +24,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void GetFire()
     {
-        print("BUTT");
+        // already dead: don't override the death animation
+        if (currentHealth <= 0)
+            return;
+
         animator.Play("Fire");
     }
     void Die()

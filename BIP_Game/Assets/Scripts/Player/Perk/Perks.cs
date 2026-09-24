@@ -23,11 +23,27 @@ public class Perk : ScriptableObject
         }
 
         // Пример применения других эффектов
-        if (perkType == PerkType.Damage)
+        switch (perkType)
         {
-            var atk = player.GetComponentInChildren<AttackZoneDamage>();
-            if (atk != null)
-                atk.damage += (int)value;
+            case PerkType.Damage:
+                var atk = player.GetComponentInChildren<AttackZoneDamage>();
+                if (atk != null)
+                    atk.damage += (int)value;
+                break;
+
+            case PerkType.Speed:
+                // value is a percentage: 20 = +20% move speed
+                var move = player.GetComponent<movement>();
+                if (move != null)
+                    move.moveSpeed *= 1f + value / 100f;
+                break;
+
+            case PerkType.HP:
+                // value is flat: 25 = +25 max health
+                var health = player.GetComponent<Health>();
+                if (health != null)
+                    health.IncreaseMaxHealth((int)value);
+                break;
         }
     }
 }

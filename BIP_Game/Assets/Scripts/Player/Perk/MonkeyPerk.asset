@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd2cf68ebe5a8c47818f4c2e4fcf9cc, type: 3}
   m_Name: MonkeyPerk
   m_EditorClassIdentifier: 
-  perkName: MoveSpeed +100
+  perkName: MoveSpeed +20
   description: MoveSpeedBoost
   icon: {fileID: 0}
   grantedAbility: {fileID: 0}
   perkType: 3
-  value: 100
+  value: 20

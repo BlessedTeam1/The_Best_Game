@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraFollow2D : MonoBehaviour
 {
     public Transform target;          // Player transform
+    public SpriteRenderer background; // If set, bounds are taken from this sprite's edges
     public Vector2 minBounds = new Vector2(0, 0);
     public Vector2 maxBounds = new Vector2(50, 30);       
     public float smoothTime = 0.1f;   // Smoothing speed
@@ -18,6 +19,13 @@ public class CameraFollow2D : MonoBehaviour
         cam = Camera.main;
         camHalfHeight = cam.orthographicSize;
         camHalfWidth = camHalfHeight * cam.aspect;
+
+        if (background)
+        {
+            Bounds b = background.bounds;
+            minBounds = b.min;
+            maxBounds = b.max;
+        }
     }
 
     void LateUpdate()

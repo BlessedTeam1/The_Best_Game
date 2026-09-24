@@ -49,6 +49,7 @@ public class AttackZoneDamage : MonoBehaviour
             if (hp != null)
             {
                 hp.TakeDamage(damage);
+                hp.GetFire();
             }
         }
     }
