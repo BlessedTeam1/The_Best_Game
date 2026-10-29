@@ -1,0 +1,7 @@
+# Build output: publish builds as GitHub release files, not commits
+android build/
+Windows build/
+*.apk
+*.aab
+*_DoNotShip/
+*_ButDontShipItWithYourGame/
