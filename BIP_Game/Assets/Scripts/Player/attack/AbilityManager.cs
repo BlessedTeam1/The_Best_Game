@@ -17,21 +17,30 @@ public class AbilityManager : MonoBehaviour
         for (int i = 0; i < abilities.Count && i < abilityKeys.Length; i++)
         {
             if (Input.GetKeyDown(abilityKeys[i]))
+                ActivateAbility(i);
+        }
+    }
+
+    // called by the keyboard above and by on-screen AbilityButtons
+    public void ActivateAbility(int i)
+    {
+        if (i < 0 || i >= abilities.Count || PauseMenu.IsPaused)
+            return;
+
+        if (abilities[i].TryActivate(gameObject))
+        {
+            if (spriteObject != null)
             {
-                if (abilities[i].TryActivate(gameObject))
-                {
-                    if (spriteObject != null)
-                    {
 
-                        spriteObject.SetActive(!spriteObject.activeSelf);
-                        StartCoroutine(HideAfterDelay(0.08f));
-                    }
-
-                    StartCoroutine(CoolDown[i].PerformCoolDown(abilities[i].cooldown));
-                    
-
-                }
+                spriteObject.SetActive(!spriteObject.activeSelf);
+                StartCoroutine(HideAfterDelay(0.08f));
             }
+
+            // the icon is optional: an ability without one still works, just with no cooldown shown
+            if (i < CoolDown.Count && CoolDown[i] != null)
+                StartCoroutine(CoolDown[i].PerformCoolDown(abilities[i].cooldown));
+
+
         }
     }
 
@@ -41,7 +50,6 @@ public class AbilityManager : MonoBehaviour
         if (!abilities.Contains(ability))
         {
             abilities.Add(ability);
-            Debug.Log("Новая способность добавлена: " + ability.abilityName);
         }
     }
     

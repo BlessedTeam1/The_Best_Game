@@ -12,7 +12,6 @@ public class HealthPotion : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.Heal(healAmount);
-                Debug.Log("Игрок подлечился на " + healAmount);
             }
 
             Destroy(gameObject); // Удалить зелье

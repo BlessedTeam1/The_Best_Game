@@ -363,6 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 110
+  heartSprites: []
+  heartImage: {fileID: 0}
 --- !u!1 &385131238
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 351453705}
+  background: {fileID: 0}
   minBounds: {x: 0, y: 0}
   maxBounds: {x: 50, y: 30}
   smoothTime: 0.1
@@ -760,6 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  animator: {fileID: 0}
 --- !u!114 &552614967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +777,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  obstacleCheckCircleRadius: 0.5
+  obstacleCheckDistance: 1.5
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleAvoidanceCooldown: 0.5
 --- !u!60 &552614968
 PolygonCollider2D:
   m_ObjectHideFlags: 0

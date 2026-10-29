@@ -18,7 +18,6 @@ public class EnemyAttack : MonoBehaviour
         {
             // Атакуем!
             targetHealth.TakeDamage(damage);
-            Debug.Log("Враг атакует: " + other.gameObject.name + " на " + damage + " урона");
             lastAttackTime = Time.time;
         }
     }

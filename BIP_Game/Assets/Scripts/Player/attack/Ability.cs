@@ -12,7 +12,6 @@ public abstract class Ability : ScriptableObject
 
     public bool CanUse()
     {
-        Debug.Log($"{Time.time} >= {lastUseTime} + {cooldown}");
         return Time.time >= lastUseTime + cooldown;
     }
 
@@ -20,7 +19,6 @@ public abstract class Ability : ScriptableObject
     {
         if (CanUse())
         {
-            Debug.Log("BEBRA");
             Activate(user);
             lastUseTime = Time.time;
             return true;

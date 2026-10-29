@@ -22,7 +22,6 @@ public class ExampleAbility : Ability
 
     public override void Activate(GameObject user)
     {
-        Debug.Log("dfdfdfd");
         
         
          var animator = user.GetComponentInChildren<Animator>();

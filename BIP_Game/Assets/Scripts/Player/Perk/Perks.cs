@@ -16,7 +16,7 @@ public class Perk : ScriptableObject
     public void Apply(GameObject player)
     {
         // Выдаём способность
-        var abilityManager = player.GetComponent<AbilityManager>();
+        var abilityManager = player.GetComponentInChildren<AbilityManager>(); // may sit on a child object
         if (grantedAbility != null && abilityManager != null)
         {
             abilityManager.AddAbility(grantedAbility);

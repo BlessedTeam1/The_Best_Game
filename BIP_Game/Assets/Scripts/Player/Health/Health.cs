@@ -48,8 +48,8 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log(gameObject.name + " dead");
         Destroy(gameObject);
+        SceneLoader.lastLevel = SceneManager.GetActiveScene().name;
         SceneManager.LoadSceneAsync("Restart_screen");
     }
 

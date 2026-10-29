@@ -35,8 +35,6 @@ public class MusicManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        print("scene changed to "+ scene.name);
-        // You can name scenes however you want
         if (scene.name=="Level1")
         {
             PlayMusic(gameMusic1, "game");
@@ -49,7 +47,7 @@ public class MusicManager : MonoBehaviour
         {
             PlayMusic(gameMusic3, "game");
         }
-        else if (scene.name =="Menu" || scene.name == "Restart_screen")
+        else if (scene.name =="Menu" || scene.name == "Restart_screen" || scene.name == "Level_choice"  || scene.name == "OptionScreen")
         {
             PlayMusic(menuMusic, "menu");
         }
@@ -62,6 +60,5 @@ public class MusicManager : MonoBehaviour
         audioSource.clip = clip;
         audioSource.Play();
         currentTrack = trackName;
-        print("play music "+currentTrack);
     }
 }

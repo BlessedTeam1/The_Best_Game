@@ -44,7 +44,6 @@ public class Expirience : MonoBehaviour
     {
 
         
-        //print(EXP);
         UpdateExp();
         if (EXP >= maxExp)
         {
@@ -68,7 +67,6 @@ public class Expirience : MonoBehaviour
 
         perkDisplay.ShowAvailablePerks(perkManager.GetRandomPerks(3));
 
-        Debug.Log("Level Up! New level: " + level);
     }
 
 }

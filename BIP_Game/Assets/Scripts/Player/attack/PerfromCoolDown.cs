@@ -14,11 +14,14 @@ public class PerfromCoolDown : MonoBehaviour
 
     public IEnumerator PerformCoolDown(float CoolDownTime)
     {
-        image.fillAmount = 1;
-        while (image.fillAmount > 0)
+        // empties over exactly CoolDownTime seconds of game time, same clock as Ability's cooldown
+        float remaining = CoolDownTime;
+        while (remaining > 0f)
         {
-            yield return new WaitForSeconds(0.05f);
-            image.fillAmount -= 0.025f;
+            image.fillAmount = remaining / CoolDownTime;
+            yield return null;
+            remaining -= Time.deltaTime;
         }
+        image.fillAmount = 0f;
     }
 }

@@ -33,6 +33,5 @@ public class VolumeClickArea : MonoBehaviour, IPointerClickHandler
     {
         volumeImage.sprite = volumeSprites[level];
         AudioListener.volume = level / (float)maxVolumeLevel;
-        Debug.Log("Volume set to level: " + level);
     }
 }

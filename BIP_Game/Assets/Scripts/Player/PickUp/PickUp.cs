@@ -9,7 +9,6 @@ public class CoinPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // Добавить монету игроку
-            Debug.Log("Монета подобрана!");
 
             Destroy(gameObject); // Удаляем монетку
             Expirience.EXP++;
