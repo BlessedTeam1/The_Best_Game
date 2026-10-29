@@ -28,8 +28,7 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
         touchAreaGraphic = GetComponent<Graphic>();
         background.gameObject.SetActive(showAtStart); // hidden again by the first release, like after any touch
 
-        // touch controls are only needed on phones (and in the Editor for testing)
-        if (!Application.isMobilePlatform && !Application.isEditor)
+        if (!TouchControls.Enabled)
             gameObject.SetActive(false);
     }
 
