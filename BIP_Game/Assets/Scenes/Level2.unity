@@ -2100,6 +2100,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786712204803359110, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: mobileScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3958670876586996722, guid: c314d4e0bda08794c82071192b031679, type: 3}
       propertyPath: sceneToLoad
       value: Menu

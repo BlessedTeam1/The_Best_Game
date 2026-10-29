@@ -13,8 +13,7 @@ public class AbilityButton : MonoBehaviour, IPointerDownHandler
 
     void Awake()
     {
-        // touch controls are only needed on phones (and in the Editor for testing)
-        if (hideOnDesktop && !Application.isMobilePlatform && !Application.isEditor)
+        if (hideOnDesktop && !TouchControls.Enabled)
             gameObject.SetActive(false);
     }
 

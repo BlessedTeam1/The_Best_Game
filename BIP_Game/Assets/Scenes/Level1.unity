@@ -4119,9 +4119,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786712204803359110, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: mobileScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3958670876586996722, guid: c314d4e0bda08794c82071192b031679, type: 3}
       propertyPath: sceneToLoad
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055793718151989628, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.847229
       objectReference: {fileID: 0}
     - target: {fileID: 7077019497397900540, guid: c314d4e0bda08794c82071192b031679, type: 3}
       propertyPath: m_Pivot.x
@@ -4202,6 +4210,22 @@ PrefabInstance:
     - target: {fileID: 7077019497397900540, guid: c314d4e0bda08794c82071192b031679, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472430463858414164, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472430463858414164, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472430463858414164, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472430463858414164, guid: c314d4e0bda08794c82071192b031679, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8907272338978810190, guid: c314d4e0bda08794c82071192b031679, type: 3}
       propertyPath: m_Name
